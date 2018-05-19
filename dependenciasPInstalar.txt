@@ -1,0 +1,11 @@
+npm init
+npm install express --save
+npm install ejs --save
+npm install mysql --save
+npm install nodemon --save
+npm install express-load --save
+npm install body-parser --save
+npm install express-validator --save
+npm install mocha --save-dev
+npm install supertest --save-dev
+npm install socket.io --save
