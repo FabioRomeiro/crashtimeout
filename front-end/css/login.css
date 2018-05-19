@@ -21,10 +21,11 @@ body{
 }
 .header{
   background-color: #EAF7EE;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
 }
 .header .logo{
   height: 50px;
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
 .sessao-login{
   font-size: 1.20em;
@@ -32,7 +33,7 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 90px auto;
+  margin: 65px auto;
   background-color: #EAF7EE;
   padding: 40px;
   border-radius: 20px;
@@ -58,4 +59,9 @@ body{
   border-radius: 5px;
   border: solid 2px #B9D1F7;
   padding: 5px;
+}
+.lista-validacao{
+  margin-left: 20px;
+  color: red;
+  font-size: 0.95em;
 }
