@@ -9,5 +9,3 @@ npm install express-validator --save
 npm install mocha --save-dev
 npm install supertest --save-dev
 npm install socket.io --save
-
-sdfsf
