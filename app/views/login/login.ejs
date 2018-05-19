@@ -1,0 +1,18 @@
+<%if(errosValidacao){%>
+<div class="erros">
+    <ul>
+        <%for(var i = 0; i<errosValidacao.length;i++){%>
+        <li><%= errosValidacao[i].param%> - <%= errosValidacao[i].msg%></li>
+        <%}%>
+    </ul>
+</div>
+<%}%>
+<form action="/login" method="POST">
+    <label for="tipo">Tipo:</label>
+    <input type="text" name="tipo" id="tipo">
+    <label for="nickname">Username:</label>
+    <input type="text" name="nickname" id="nickname">
+    <label for="password">Password:</label>
+    <input type="text" name="password" id="password">
+    <input type="submit" value="logar">
+</form>
