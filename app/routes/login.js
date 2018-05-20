@@ -8,8 +8,8 @@ module.exports = function (app) {
         console.log(dados);
 
 
-        req.assert('nickname', 'Username é obrigatório').notEmpty();
-        req.assert('password', 'Senha é obrigatório').notEmpty();
+        req.assert('nick', 'Username é obrigatório').notEmpty();
+        req.assert('pass', 'Senha é obrigatório').notEmpty();
 
         var erros = req.validationErrors();
 
