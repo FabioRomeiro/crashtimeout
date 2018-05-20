@@ -8,8 +8,19 @@
   align-items: center;
 }
 .infos{
-  margin-right: 250px;
+  margin-left: 520px;
   list-style-type: none;
+}
+.botao-sair{
+  margin-right: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1E2A4F;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
 }
 .info-user{
   margin-bottom: 5px;
