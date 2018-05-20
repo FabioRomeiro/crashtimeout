@@ -1,6 +1,8 @@
 module.exports = function(app) {
     app.get('/redacoes/form', function(req, res) {
         res.render('redacao/form');
+        console.log({logged:logged});
+        
     });
 
     app.post('/redacoes', function(req, res) {

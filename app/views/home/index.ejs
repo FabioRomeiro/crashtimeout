@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Corretor de Redação</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <p>isso ais</p>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/index/main.css">
+    <link rel="stylesheet" href="css/index/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Tajawal" rel="stylesheet">
+    <title>Check</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <ul class="infos">
+        <li class="info-user"><%= name %></li>
+        <li class="info-user"><%= rm %></li>
+      </ul>
+    </header>
+    <div class="container">
+      <nav class="menu-navegacao">
+        <h3 class="option-title">Options</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option form">Option1</a></li>
+          <li><a href="#" class="option lista">Option2</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <h2 class="content-title">Escolha uma opção!</h2>
+        <div class="envio-redacao sumiu">
+          <form class="formulario-redacao">
+            <div id="tema-redacao">
+              <label for="tema">Tema</label>
+              <select class="ddl-tema" name="tema">
+                <option value="">Value</option>
+              </select>
+            </div>
+            <div id="tipo-redacao">
+              <label for="tipo">Tipo</label>
+              <select class="ddl-tipo" name="tipo">
+                <option value="ITA">ITA</option>
+                <option value="ENEM">ENEM</option>
+                <option value="FUVEST">FUVEST</option>
+                <option value="VUNESP">VUNESP</option>
+              </select>
+            </div>
+            <div id="semana-redacao">
+              <label for="semana">Semana</label>
+              <input type="text" name="semana" value="">
+            </div>
+            <div id="url-redacao">
+              <label for="url-redacao">Enviar redação</label>
+              <input type="file" name="url-redacao" accept="application/pdf,application/vnd.ms-excel">
+            </div>
+          </form>
+        </div>
+        <div class="lista-redacao sumiu">
+          <%if(user == 1) {%>
+          <ul>
+            <li><a href="#">Dode Expiatório do sistema</a></li>
+          </ul>
+          <%} else {%>
+            <ul>
+              <li><a href="#">Coorporações de ofício Contemporâneos</a></li>
+              <li><a href="#">A manipulação do senso comum</a></li>
+            </ul>
+          <%}%>
+        </div>
+      </section>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/content.js"></script>
+  </body>
 </html>

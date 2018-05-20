@@ -1,11 +1,13 @@
 module.exports = function (app) {
     app.get('/login', function (req, res) {
+        logged = null;
+        console.log({logged:logged});
         res.render('login/login', { errosValidacao: {}, dados: {} });
     })
     app.post('/login', function (req, response) {
 
         var dados = req.body;
-        console.log(dados);
+        console.log({dados:dados});
 
 
         req.assert('nick', 'Username é obrigatório').notEmpty();
@@ -30,10 +32,10 @@ module.exports = function (app) {
         var userDAO = new app.infra.UserDAO(connection);
 
         userDAO.login(dados.nick, dados.pass, function (err, res) {
-            console.log(res);
-
             if (res.length) {
-                response.redirect('/redacao/form');
+                console.log({res:res});
+                logged = [res[0].id, res[0].type];
+                response.redirect('/')
             } else {
                 response.redirect('/login');
             }
