@@ -55,9 +55,16 @@
           </form>
         </div>
         <div class="lista-redacao sumiu">
+          <%if(user == 1) {%>
           <ul>
-            <li><a href="#"><%= essay_name%></a></li>
+            <li><a href="#">Dode Expiatório do sistema</a></li>
           </ul>
+          <%} else {%>
+            <ul>
+              <li><a href="#">Coorporações de ofício Contemporâneos</a></li>
+              <li><a href="#">A manipulação do senso comum</a></li>
+            </ul>
+          <%}%>
         </div>
       </section>
   </div>

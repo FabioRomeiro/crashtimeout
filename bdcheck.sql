@@ -25,13 +25,13 @@ CREATE TABLE `essay_info` (
 
 CREATE TABLE `essay` (
     `id` int AUTO_INCREMENT NOT NULL ,
-    `student_id` int  NOT NULL ,
+    `sudent_id` int  NOT NULL ,
     `info_id` int  NOT NULL ,
     `source` varchar(255)  NOT NULL ,
     `is_corrected` bool  NOT NULL ,
-    `correction_description` varchar(255)  NULL ,
-    `total_score` float  NULL ,
-    `parcial_score` float  NULL ,
+    `correction_description` varchar(255) DEFAULT NULL ,
+    `total_score` float DEFAULT NULL,
+    `parcial_score` float DEFAULT NULL,
     PRIMARY KEY (
         `id`
     )
@@ -68,13 +68,11 @@ CREATE TABLE `user` (
     )
 );
 
-ALTER TABLE `essay` ADD CONSTRAINT `fk_essay_student_id` FOREIGN KEY(`student_id`)
+ALTER TABLE `essay` ADD CONSTRAINT `fk_essay_sudent_id` FOREIGN KEY(`sudent_id`)
 REFERENCES `student` (`id`);
 
 ALTER TABLE `essay` ADD CONSTRAINT `fk_essay_info_id` FOREIGN KEY(`info_id`)
 REFERENCES `essay_info` (`id`);
-
-
 
 INSERT INTO student VALUES (0, "Maria Roberto", "1B", "Vila Mariana", "22212223");
 INSERT INTO student VALUES (0, "Predo Predregulho Pedroso", "MED1A", "Vila Mariana", "33313233");
