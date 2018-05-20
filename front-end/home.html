@@ -17,12 +17,51 @@
         <li class="info-user">RM</li>
       </ul>
     </header>
-    <nav class="menu-navegacao">
-      <h3 class="option-title">Options</h3>
-      <ul class="lista-opcoes">
-        <li><a href="#" class="option">Option1</a></li>
-        <li><a href="#" class="option">Option2</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="menu-navegacao">
+        <h3 class="option-title">Options</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option form">Option1</a></li>
+          <li><a href="#" class="option lista">Option2</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <h2 class="content-title">Escolha uma opção!</h2>
+        <div class="envio-redacao sumiu">
+          <form class="formulario-redacao">
+            <div id="tema-redacao">
+              <label for="tema">Tema</label>
+              <select class="ddl-tema" name="tema">
+                <option value="">Value</option>
+              </select>
+            </div>
+            <div id="tipo-redacao">
+              <label for="tipo">Tipo</label>
+              <select class="ddl-tipo" name="tipo">
+                <option value="ITA">ITA</option>
+                <option value="ENEM">ENEM</option>
+                <option value="FUVEST">FUVEST</option>
+                <option value="VUNESP">VUNESP</option>
+              </select>
+            </div>
+            <div id="semana-redacao">
+              <label for="semana">Semana</label>
+              <input type="text" name="semana" value="">
+            </div>
+            <div id="url-redacao">
+              <label for="url-redacao">Enviar redação</label>
+              <input type="file" name="url-redacao" accept="application/pdf,application/vnd.ms-excel">
+            </div>
+          </form>
+        </div>
+        <div class="lista-redacao sumiu">
+          <ul>
+            <li><a href="#">Redacao</a></li>
+          </ul>
+        </div>
+      </section>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/content.js"></script>
   </body>
 </html>
