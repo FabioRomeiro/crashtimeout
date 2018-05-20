@@ -1,0 +1,26 @@
+.infos-corretor{
+  display: flex;
+  flex-direction: column;
+}
+.infos-corretor div{
+  margin-bottom: 15px;
+}
+.info-rm label{
+  margin-right: 17px;
+}
+.botao{
+  padding: 10px 15px;
+  color: white;
+  background-color: #1E2A4F;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 20%;
+}
+.formulario-redacao label{
+  margin-bottom: 10px;
+}
+.formulario-redacao .botao{
+  margin-top: 15px;
+}

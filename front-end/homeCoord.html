@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homeCoord.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Tajawal" rel="stylesheet">
+    <title>Check</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <ul class="infos">
+        <li class="info-user">Nome</li>
+        <li class="info-user">RM</li>
+      </ul>
+      <a href="#" class="botao-sair">Sair</a>
+    </header>
+    <div class="container">
+      <nav class="menu-navegacao">
+        <h3 class="option-title">Cadastrar</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option newcorretor">Novo corretor</a></li>
+          <li><a href="#" class="option newessay">Nova redação</a></li>
+          <li><a href="#" class="option newerror">Erros comuns</a></li>
+          <li><a href="#" class="option newcomment">Comentários comuns</a></li>
+        </ul>
+        <h3 class="option-title">Consultar</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option conscorretor">Acesso de corretor</a></li>
+          <li><a href="#" class="option consentregues">Redações entregues</a></li>
+          <li><a href="#" class="option conscorrigidas">Redações corrigidas</a></li>
+        </ul>
+        <h3 class="option-title">Blocos de redação</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option selblock">Selecionar blocos</a></li>
+          <li><a href="#" class="option distrblock">Distribuir blocos</a></li>
+        </ul>
+        <h3 class="option-title">Relatório</h3>
+        <ul class="lista-opcoes">
+          <li><a href="#" class="option exprel">Exportar relatório de notas e corretores</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <h2 class="content-title">Escolha uma opção!</h2>
+        <div class="cadastro-corretor sumiu">
+          <form class="formulario-corretor">
+            <div class="infos-corretor">
+              <div class="info-nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome">
+                <label for="unidade">Unidade</label>
+                <select>
+                  <option value="SP">SP</option>
+                  <option value="SJC">SJC</option>
+                  <option value="CP">CP</option>
+                  <option value="RJ">RJ</option>
+                </select>
+              </div>
+              <div class="info-rm">
+                <label for="RM">RM</label>
+                <input type="text" name="RM">
+              </div>
+              <div class="botao-corretor">
+                <button type="button" class="botao">Cadastrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="cadastro-redacao sumiu">
+          <form class="formulario-redacao">
+            <label for="tema">Novo tema</label>
+            <input type="text" name="tema" value="">
+            <button type="button" class="botao">Cadastrar</button>
+          </form>
+        </div>
+        <div class="lista-redacao sumiu">
+          <ul>
+            <li><a href="#">Redacao</a></li>
+          </ul>
+        </div>
+      </section>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/content.js"></script>
+  </body>
+</html>
