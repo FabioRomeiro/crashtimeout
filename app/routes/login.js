@@ -29,7 +29,7 @@ module.exports = function (app) {
         var connection = app.infra.connectionFactory();
         var userDAO = new app.infra.UserDAO(connection);
 
-        userDAO.login(dados.tipo,dados.nickname, dados.password, function (err, res) {
+        userDAO.login(dados.nick, dados.pass, function (err, res) {
             console.log(res);
 
             if (res.length) {
