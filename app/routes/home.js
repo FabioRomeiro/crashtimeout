@@ -1,5 +1,5 @@
 module.exports = function(app) {
-    var name, test
+    var name, rm
 
     app.get('/', function(req, res) {
 
@@ -9,9 +9,9 @@ module.exports = function(app) {
           studentDAO.getStudentInfo(logged[0], function(err, user) {
               console.log({User:user})
               name = user[0].name;
-              test = user[0].class;
-              console.log(name, test)
-              res.render('home/index',{name:name});
+              rm = user[0].class;
+              console.log(name, rm)
+              res.render('home/index',{name:name, rm:rm});
           })
           studentDAO.getStudentEssay(logged[0], function(err, res) {
               console.log({Essays:res})
