@@ -1,11 +1,21 @@
 module.exports = function(app) {
+    var name, test
+
     app.get('/', function(req, res) {
-        res.render('home/index');
-        // var connection = app.infra.connectionFactory();
-        // var produtosDAO = new app.infra.ProdutosDAO(connection);
-        // produtosDAO.lista(function(erros, resultados) {
-        //     res.render('home/index',{livros:resultados});
-        // });
-        connection.end();
+
+        if (logged[1] == 0) {
+          var connection = app.infra.connectionFactory();
+          var studentDAO = new app.infra.studentDAO(connection);
+          studentDAO.getStudentInfo(logged[0], function(err, user) {
+              console.log({User:user})
+              name = user[0].name;
+              test = user[0].class;
+              console.log(name, test)
+              res.render('home/index',{name:name});
+          })
+          studentDAO.getStudentEssay(logged[0], function(err, res) {
+              console.log({Essays:res})
+          })
+        }
     });
 }
