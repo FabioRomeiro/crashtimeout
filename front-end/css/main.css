@@ -1,0 +1,13 @@
+body{
+  background-image: url(../img/background.jpg);
+  font-family: "Tajawal", sans-serif;
+  overflow: hidden;
+}
+.header{
+  background-color: #EAF7EE;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+.header .logo{
+  height: 50px;
+  margin: 15px 20px;
+}

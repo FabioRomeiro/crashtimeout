@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infos{
+  margin-right: 250px;
+  list-style-type: none;
+}
+.info-user{
+  margin-bottom: 5px;
+}
+.menu-navegacao{
+  padding: 20px auto;
+  background-color: #D4F7F5;
+  width: 20%;
+  height: 9999px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+.option{
+  text-decoration: none;
+  color: black;
+}
