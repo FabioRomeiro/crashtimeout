@@ -77,7 +77,6 @@ REFERENCES `essay_info` (`id`);
 INSERT INTO student VALUES (0, "Maria Roberto", "1B", "Vila Mariana", "22212223");
 INSERT INTO student VALUES (0, "Predo Predregulho Pedroso", "MED1A", "Vila Mariana", "33313233");
 
-
 INSERT INTO coordinator VALUES (0, "Julison Condenado", "Vila Mariana", "123456789");
 INSERT INTO coordinator VALUES (0, "Creusa Condicionador", "Vila Mariana", "987654321");
 

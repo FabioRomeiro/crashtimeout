@@ -1,0 +1,84 @@
+.sumiu{
+  display: none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infos{
+  margin-left: 520px;
+  list-style-type: none;
+}
+.botao-sair{
+  margin-right: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1E2A4F;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+.info-user{
+  margin-bottom: 5px;
+}
+.menu-navegacao{
+  padding: 20px 15px;
+  background-color: #162B53;
+  width: 20%;
+  height: 9999px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+.option{
+  text-decoration: none;
+  color: #9397B2;
+}
+.option-title{
+  color: white;
+  font-size: 1.45em;
+  background-color: #121C56;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+.lista-opcoes{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.lista-opcoes li{
+  margin-bottom: 10px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  width: 50%;
+  margin-right: 8%;
+  margin-top: 50px;
+  background-color: #EAF7EE;
+  padding: 40px 80px;
+}
+.formulario-redacao{
+  display: flex;
+  flex-direction: column;
+}
+.formulario-redacao div{
+  margin-bottom: 15px;
+}
+.content-title{
+  font-size: 1.45em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.lista-redacao{
+  background-color: white;
+  border: solid 2px #B9D1F7;
+  padding: 20px;
+}
+.lista-redacao ul {
+    list-style-type: none;
+}
