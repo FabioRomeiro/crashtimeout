@@ -1,8 +1,21 @@
 module.exports = function(app) {
-    app.get('/redacoes/form', function(req, res) {
-        res.render('redacao/form');
+    app.get('/redacoes/viewPredo', function(req, res) {
+        if (logged[1] == 0) {
+
+            userid = logged[0]
+            var connection = app.infra.connectionFactory();
+
+            var connection = app.infra.connectionFactory();
+            var studentDAO = new app.infra.studentDAO(connection);
+
+            studentDAO.getStudentInfo(logged[0], function (err, user) {
+                console.log({ User: user })
+                name = user[0].name;
+                rm = user[0].class;
+                res.render('redacao/viewPredo', { name: name, rm: rm, user: userid });
+            })
+        }
         console.log({logged:logged});
-        
     });
 
     app.post('/redacoes', function(req, res) {
@@ -24,14 +37,5 @@ module.exports = function(app) {
 
             return;
         }
-
-        var connection = app.infra.connectionFactory();
-        var produtosDAO = new app.infra.ProdutosDAO(connection);
-
-        produtosDAO.salva(produto, function(err, results) {
-            res.redirect('/produtos');
-        });
-
-        connection.end();
     });
 }

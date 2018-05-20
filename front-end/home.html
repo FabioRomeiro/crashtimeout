@@ -29,7 +29,8 @@
       <section class="content">
         <h2 class="content-title">Escolha uma opção!</h2>
         <div class="envio-redacao sumiu">
-          <form class="formulario-redacao">
+
+          <form method="POST" class="formulario-redacao">
             <div id="tema-redacao">
               <label for="tema">Tema</label>
               <select class="ddl-tema" name="tema">
@@ -53,7 +54,11 @@
               <label for="url-redacao">Enviar redação</label>
               <input type="file" name="url-redacao" accept="application/pdf,application/vnd.ms-excel">
             </div>
+            <div id="submit-redacao">
+              <input type="submit" value="Enviar">
+            </div>
           </form>
+
         </div>
         <div class="lista-redacao sumiu">
           <ul>

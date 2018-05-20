@@ -16,6 +16,7 @@
         <li class="info-user"><%= name %></li>
         <li class="info-user"><%= rm %></li>
       </ul>
+      <a href="#" class="botao-sair">Sair</a>
     </header>
     <div class="container">
       <nav class="menu-navegacao">
@@ -28,6 +29,7 @@
       <section class="content">
         <h2 class="content-title">Escolha uma opção!</h2>
         <div class="envio-redacao sumiu">
+
           <form class="formulario-redacao">
             <div id="tema-redacao">
               <label for="tema">Tema</label>
@@ -52,7 +54,11 @@
               <label for="url-redacao">Enviar redação</label>
               <input type="file" name="url-redacao" accept="application/pdf,application/vnd.ms-excel">
             </div>
+            <div id="submit-redacao">
+              <input type="submit" value="Enviar">
+            </div>
           </form>
+
         </div>
         <div class="lista-redacao sumiu">
           <%if(user == 1) {%>
@@ -61,8 +67,7 @@
           </ul>
           <%} else {%>
             <ul>
-              <li><a href="#">Coorporações de ofício Contemporâneos</a></li>
-              <li><a href="#">A manipulação do senso comum</a></li>
+              <li><a href="/redacoes/viewPredo">Coorporações de ofício Contemporâneos</a></li>
             </ul>
           <%}%>
         </div>

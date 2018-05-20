@@ -3,7 +3,7 @@ function createDBConnection() {
     return mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: 'ALUNOS',
+        password: 'root',
         database: 'bdcheck'
     });
 }
